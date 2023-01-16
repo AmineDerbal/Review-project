@@ -4,7 +4,141 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          form="name"
+          id="name"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+        />
+      </div>
+      <div class="form-group">
+        <label for="number" id="number-label">Age</label>
+        <input
+          type="number"
+          id="number"
+          min="5"
+          max="100"
+          required
+          placeholder="Age"
+        />
+      </div>
+      <div class="form-group">
+        <p>What are your current occupation</p>
+        <select name="occupation" id="dropdown" required>
+          <option disabled selected value>
+            Select Your current occupation
+          </option>
+          <option value="student">Student</option>
+          <option value="worker">Worker</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Would you recommend this program to your friends</p>
+        <label>
+          <input
+            type="radio"
+            name="user"
+            class="radio-options"
+            value="yes"
+            checked
+          />
+          Yes
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="user"
+            class="radio-options"
+            value="non"
+            checked
+          />
+          No
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="user"
+            class="radio-options"
+            value="maybe"
+            checked
+          />
+          Maybe
+        </label>
+      </div>
+      <div class="form-group">
+        <p>What is your favorite feature of freeCodeCamp?</p>
+        <label>
+          <input
+            name="user"
+            value="first"
+            type="checkbox"
+            class="check-option"
+          />
+          first
+        </label>
+        <label>
+          <input
+            name="user"
+            value="second"
+            type="checkbox"
+            class="check-option"
+          />
+          second
+        </label>
+        <label>
+          <input
+            name="user"
+            value="third"
+            type="checkbox"
+            class="check-option"
+          />
+          third
+        </label>
+        <label>
+          <input
+            name="user"
+            value="fourth"
+            type="checkbox"
+            class="check-option"
+          />
+          fourth
+        </label>
+      </div>
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea
+          id="txtarea"
+          class="text-area"
+          name="comments"
+          placeholder="enter your comment here"
+        ></textarea>
+      </div>
+    </form>
+    <div class="form-group">
+      <button id="submit" type="submit">Submit</button>
+    </div>
+  </body>
 </html>
