@@ -1,0 +1,40 @@
+html,
+body {
+  box-sizing: border-box;
+  margin: 0.5;
+  padding: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: bisque;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+#txtarea {
+  width: 40rem;
+  height: 10rem;
+}
+#title {
+  color: red;
+}
+
+input[type="text"],
+input[type="email"] {
+  box-sizing: border-box;
+  width: 60%;
+}
+
+button {
+  background-color: #008cba;
+  font-size: 16px;
+  padding: 0.5rem 0.3rem;
+  border: 1px #008cba solid;
+  width: 10rem;
+  color: white;
+}
